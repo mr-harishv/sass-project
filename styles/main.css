@@ -53,6 +53,7 @@ input {
 
 body {
   font-size: 16px;
+  color: #fff;
 }
 
 @font-face {
@@ -75,6 +76,12 @@ p {
 
 button {
   font-family: "SFProTextSemibold";
+}
+
+.topSection {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #161815;
 }
 
 /*# sourceMappingURL=main.css.map */
