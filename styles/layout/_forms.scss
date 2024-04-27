@@ -1,0 +1,58 @@
+.searchBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25%;
+}
+.searchBox_in {
+  width: 40%;
+  border-radius: $brdr-radius;
+  border: 1px solid $txt-grey;
+  padding: 0.5% 0.5% 0.5% 1%;
+  display: flex;
+}
+
+.searchBox_in input {
+  height: 44px;
+  flex: 1;
+  color: #fff;
+}
+
+/* Standard Placeholder Style */
+.searchBox_in input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: $txt-grey;
+}
+.searchBox_in input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $txt-grey;
+  opacity: 1;
+}
+.searchBox_in input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $txt-grey;
+  opacity: 1;
+}
+.searchBox_in input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: $txt-grey;
+}
+
+/* Placeholder Focus Style */
+/* WebKit browsers */
+.searchBox_in input::-webkit-input-placeholder:focus {
+  color: $txt-grey;
+}
+/* Mozilla Firefox */
+.searchBox_in input:-moz-placeholder:focus {
+  color: $txt-grey;
+  opacity: 1;
+}
+.searchBox_in input::-moz-placeholder:focus {
+  color: $txt-grey;
+  opacity: 1;
+}
+/* Internet Explorer 10+ */
+.searchBox_in input:-ms-input-placeholder:focus {
+  color: $txt-grey;
+}

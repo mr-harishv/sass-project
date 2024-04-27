@@ -10,11 +10,12 @@ $large-screen: 1199.98px;
 
 @mixin tablet {
   @media screen and (max-width: $medium-screen) {
+    @content;
   }
 }
 
 @mixin desktop {
-    @media screen and (max-width: $large-screen) {
-    }
+  @media screen and (max-width: $large-screen) {
+    @content;
   }
-  
+}

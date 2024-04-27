@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  padding-inline: 6.5%;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  ul {
+    margin-left: 40px;
+    li {
+      display: inline;
+      &:nth-child(-n + 2) {
+        margin-right: 24px;
+      }
+      a {
+        color: $txt-grey;
+        transition: all 0.5s;
+        &:hover {
+          color: $txt-white;
+        }
+      }
+    }
+  }
+  .cta {
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+  }
+}

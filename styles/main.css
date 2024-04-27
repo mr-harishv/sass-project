@@ -49,6 +49,10 @@ input {
   outline: none;
   font-size: inherit;
   font-family: inherit;
+  background-color: transparent;
+  border-radius: initial;
+  outline: initial;
+  box-shadow: initial;
 }
 
 body {
@@ -78,10 +82,151 @@ button {
   font-family: "SFProTextSemibold";
 }
 
+.primary-btn {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 12px 32px;
+  border: 1px solid #6de754;
+  border-radius: 12px;
+}
+
+.second-btn {
+  color: #000000;
+  background-color: #6de754;
+  padding: 12px 32px;
+  border: 1px solid #6de754;
+  border-radius: 12px;
+}
+
 .topSection {
   min-height: 100vh;
   width: 100%;
   background-color: #161815;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.text-box h1 {
+  font-size: 88px;
+  color: #6de754;
+}
+.text-box h1 span {
+  color: #ffffff;
+}
+@media screen and (max-width: 991.98px) {
+  .text-box h1 {
+    font-size: 62px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .text-box h1 {
+    font-size: 40px;
+  }
+}
+.text-box p {
+  max-width: 450px;
+  color: #909090;
+  margin-top: 1.25%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-inline: 6.5%;
+  padding-top: 4%;
+  padding-bottom: 1%;
+}
+header ul {
+  margin-left: 40px;
+}
+header ul li {
+  display: inline;
+}
+header ul li:nth-child(-n+2) {
+  margin-right: 24px;
+}
+header ul li a {
+  color: #909090;
+  transition: all 0.5s;
+}
+header ul li a:hover {
+  color: #ffffff;
+}
+header .cta {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.searchBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25%;
+}
+
+.searchBox_in {
+  width: 40%;
+  border-radius: 12px;
+  border: 1px solid #909090;
+  padding: 0.5% 0.5% 0.5% 1%;
+  display: flex;
+}
+
+.searchBox_in input {
+  height: 44px;
+  flex: 1;
+  color: #fff;
+}
+
+/* Standard Placeholder Style */
+.searchBox_in input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #909090;
+}
+
+.searchBox_in input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909090;
+  opacity: 1;
+}
+
+.searchBox_in input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #909090;
+  opacity: 1;
+}
+
+.searchBox_in input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #909090;
+}
+
+/* Placeholder Focus Style */
+/* WebKit browsers */
+.searchBox_in input::-webkit-input-placeholder:focus {
+  color: #909090;
+}
+
+/* Mozilla Firefox */
+.searchBox_in input:-moz-placeholder:focus {
+  color: #909090;
+  opacity: 1;
+}
+
+.searchBox_in input::-moz-placeholder:focus {
+  color: #909090;
+  opacity: 1;
+}
+
+/* Internet Explorer 10+ */
+.searchBox_in input:-ms-input-placeholder:focus {
+  color: #909090;
 }
 
 /*# sourceMappingURL=main.css.map */

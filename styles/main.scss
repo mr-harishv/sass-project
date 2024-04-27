@@ -1,6 +1,9 @@
-@import 'base/reset';
-@import 'base/typography';
-@import 'sass-utils/variables';
-@import 'sass-utils/mixin';
-@import 'pages/home';
-@import 'layout/header'
+@import "base/reset";
+@import "base/typography";
+@import "sass-utils/variables";
+@import "sass-utils/mixin";
+@import "components/buttons";
+@import "sass-utils/mixin";
+@import "pages/home";
+@import "layout/header";
+@import "layout/forms";
