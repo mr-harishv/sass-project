@@ -1,0 +1,52 @@
+/* Box sizing border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+/* Remove default margins, padding and list styles (bullets/numbers) */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+/* Remove anchor tag default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Remove button default styles */
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Remove input default styles */
+input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+body {
+  font-size: 16px;
+}
