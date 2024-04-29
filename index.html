@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SASS Conversion</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section class="topSection">
       <header>
         <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        <ul>
-          <li><a href="/">AI Cover Letter Generator</a></li>
-          <li><a href="/">Resume Template</a></li>
-          <li><a href="/">Pricing</a></li>
-        </ul>
-        <div class="cta">
-          <button class="primary-btn">Sign In</button>
-          <button class="second-btn">Get Started</button>
-        </div>
+        <nav id="menuLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/">AI Cover Letter Generator</a></li>
+            <li><a href="/">Resume Template</a></li>
+            <li><a href="/">Pricing</a></li>
+          </ul>
+          <div class="cta">
+            <button class="primary-btn">Sign In</button>
+            <button class="second-btn">Get Started</button>
+          </div>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </header>
       <div class="text-box">
         <h1>Win your dream job<br /><span>with PostJob</span></h1>
@@ -29,12 +40,138 @@
         </p>
       </div>
       <div class="searchBox">
-        <div class="searchBox_in">
-          <input type="text" name="" id="" placeholder="Enter Email" />
+        <div class="searchBox_in" id="parentDiv">
+          <input type="text" name="" id="textInput" placeholder="Enter Email" />
           <button class="second-btn">Get Started</button>
         </div>
       </div>
-      <div class="firm_features_row">3 cards</div>
+      <div class="features_mgn_gap firm_features_row">
+        <div class="cards-col">
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V9L13.5 2Z"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.5 2V9H20.5"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>AI Cover Letter Generator</h4>
+          <p>
+            The AI Cover Letter Generator is a tool that uses artificial
+            intelligence algorithms to create personalized cover letters for job
+            applicants.
+          </p>
+        </div>
+        <div class="cards-col">
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 14C13.6046 14 14.5 13.1046 14.5 12C14.5 10.8954 13.6046 10 12.5 10C11.3954 10 10.5 10.8954 10.5 12C10.5 13.1046 11.3954 14 12.5 14Z"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.74 7.76005C17.2979 8.31729 17.7404 8.97902 18.0424 9.70741C18.3443 10.4358 18.4997 11.2166 18.4997 12.0051C18.4997 12.7935 18.3443 13.5743 18.0424 14.3027C17.7404 15.0311 17.2979 15.6928 16.74 16.2501M8.26 16.2401C7.70214 15.6828 7.25959 15.0211 6.95764 14.2927C6.6557 13.5643 6.50028 12.7835 6.50028 11.9951C6.50028 11.2066 6.6557 10.4258 6.95764 9.69741C7.25959 8.96902 7.70214 8.30729 8.26 7.75005M19.57 4.93005C21.4447 6.80533 22.4979 9.34841 22.4979 12.0001C22.4979 14.6517 21.4447 17.1948 19.57 19.0701M5.43 19.0701C3.55529 17.1948 2.50214 14.6517 2.50214 12.0001C2.50214 9.34841 3.55529 6.80533 5.43 4.93005"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h4>Smart Personalization</h4>
+          <p>
+            Smart Personalization refers to the use of data and technology to
+            deliver tailored experiences and content to individual customers or
+            users.
+          </p>
+        </div>
+        <div class="cards-col">
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V9L13.5 2Z"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.5 2V9H20.5"
+              stroke="#6DE754"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>Resume Scanner</h4>
+          <p>
+            A resume scanner is a software application that uses optical
+            character recognition (OCR) technology to extract and analyze data
+            from resumes.
+          </p>
+        </div>
+      </div>
     </section>
+    <script>
+      var navLinks = document.getElementById("menuLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+
+
+      var inputElement = document.getElementById('textInput');
+
+    // Add an event listener for the focus event on the input element
+    inputElement.addEventListener('focus', function() {
+        // Get the parent div
+        var parentDiv = inputElement.parentNode;
+
+        // Set focus on the parent div
+        parentDiv.focus();
+
+        // Add box-shadow style to the parent div
+        parentDiv.style.border = '1px solid #6de754';
+    });
+
+    // Add an event listener for the blur event on the input element
+    inputElement.addEventListener('blur', function() {
+        // Get the parent div
+        var parentDiv = inputElement.parentNode;
+
+        // Remove box-shadow style from the parent div
+        parentDiv.style.border = '1px solid #909090';
+    });
+    </script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+.firm_features_row {
+  padding-inline: 11.4%;
+  display: flex;
+  justify-content: space-between;
+  @include tablet{
+    padding-inline: 6%;
+  }
+  @include mobile {
+    padding: 6%;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cards-col {
+    flex-basis: 32%;
+    background-color: $cards-bg;
+    padding: 1.5%;
+    border-radius: $brdr-radius;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include mobile {
+      padding: 5% 4%;
+    }
+    h4 {
+      color: $txt-white;
+    }
+    p {
+      color: $txt-grey;
+      font-size: $font-size-default;
+      line-height: 22px;
+    }
+  }
+}

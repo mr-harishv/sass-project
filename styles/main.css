@@ -60,6 +60,13 @@ body {
   color: #fff;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "SFProTextRegular";
   src: url("../../fonts/SFProTextRegular.eot");
@@ -103,35 +110,42 @@ button {
   width: 100%;
   background-color: #161815;
 }
-
-.text-box {
+.topSection .text-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 5%;
 }
-.text-box h1 {
+@media screen and (max-width: 767.98px) {
+  .topSection .text-box {
+    padding: 0 6%;
+  }
+}
+.topSection .text-box h1 {
   font-size: 88px;
   color: #6de754;
 }
-.text-box h1 span {
+.topSection .text-box h1 span {
   color: #ffffff;
 }
 @media screen and (max-width: 991.98px) {
-  .text-box h1 {
+  .topSection .text-box h1 {
     font-size: 62px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .text-box h1 {
-    font-size: 40px;
+  .topSection .text-box h1 {
+    font-size: 30px;
   }
 }
-.text-box p {
+.topSection .text-box p {
   max-width: 450px;
   color: #909090;
   margin-top: 1.25%;
+}
+.topSection .features_mgn_gap {
+  margin-top: 3.5%;
 }
 
 header {
@@ -140,27 +154,84 @@ header {
   padding-inline: 6.5%;
   padding-top: 4%;
   padding-bottom: 1%;
+  position: relative;
 }
-header ul {
+@media screen and (max-width: 991.98px) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+header nav ul {
   margin-left: 40px;
 }
-header ul li {
+@media screen and (max-width: 991.98px) {
+  header nav ul {
+    margin-left: 0px;
+  }
+}
+header nav ul li {
   display: inline;
 }
-header ul li:nth-child(-n+2) {
+@media screen and (max-width: 991.98px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+header nav ul li:nth-child(-n+2) {
   margin-right: 24px;
 }
-header ul li a {
+@media screen and (max-width: 991.98px) {
+  header nav ul li:nth-child(-n+2) {
+    margin-right: 0px;
+  }
+}
+header nav ul li a {
   color: #909090;
   transition: all 0.5s;
 }
-header ul li a:hover {
+header nav ul li a:hover {
   color: #ffffff;
 }
-header .cta {
+header nav .cta {
   margin-left: auto;
   display: flex;
   gap: 16px;
+}
+@media screen and (max-width: 991.98px) {
+  header nav .cta {
+    margin-left: inherit;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  header nav {
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    width: 200px;
+    right: -200px;
+    top: 0;
+    padding: 10px;
+    background-color: #1e201d;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 2px solid #6de754;
+    transition: 1s;
+  }
+}
+header .fa-solid {
+  display: none;
+}
+@media screen and (max-width: 991.98px) {
+  header .fa-solid {
+    display: block;
+  }
 }
 
 .searchBox {
@@ -169,6 +240,11 @@ header .cta {
   justify-content: center;
   margin-top: 1.25%;
 }
+@media screen and (max-width: 767.98px) {
+  .searchBox {
+    padding: 6%;
+  }
+}
 
 .searchBox_in {
   width: 40%;
@@ -176,6 +252,19 @@ header .cta {
   border: 1px solid #909090;
   padding: 0.5% 0.5% 0.5% 1%;
   display: flex;
+}
+@media screen and (max-width: 991.98px) {
+  .searchBox_in {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .searchBox_in {
+    width: 100%;
+    flex-direction: column;
+    padding: 5% 4%;
+    gap: 15px;
+  }
 }
 
 .searchBox_in input {
@@ -227,6 +316,46 @@ header .cta {
 /* Internet Explorer 10+ */
 .searchBox_in input:-ms-input-placeholder:focus {
   color: #909090;
+}
+
+.firm_features_row {
+  padding-inline: 11.4%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991.98px) {
+  .firm_features_row {
+    padding-inline: 6%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .firm_features_row {
+    padding: 6%;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.firm_features_row .cards-col {
+  flex-basis: 32%;
+  background-color: #1e201d;
+  padding: 1.5%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (max-width: 767.98px) {
+  .firm_features_row .cards-col {
+    padding: 5% 4%;
+  }
+}
+.firm_features_row .cards-col h4 {
+  color: #ffffff;
+}
+.firm_features_row .cards-col p {
+  color: #909090;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=main.css.map */

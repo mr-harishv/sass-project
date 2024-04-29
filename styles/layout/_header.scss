@@ -4,25 +4,68 @@ header {
   padding-inline: 6.5%;
   padding-top: 4%;
   padding-bottom: 1%;
-  ul {
-    margin-left: 40px;
-    li {
-      display: inline;
-      &:nth-child(-n + 2) {
-        margin-right: 24px;
+  position: relative;
+  @include tablet{
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    ul {
+      margin-left: 40px;
+      @include tablet{
+        margin-left: 0px;
       }
-      a {
-        color: $txt-grey;
-        transition: all 0.5s;
-        &:hover {
-          color: $txt-white;
+      li {
+        display: inline;
+        @include tablet{
+          display: block;
+          margin-bottom: 16px;
+        }
+        &:nth-child(-n + 2) {
+          margin-right: 24px;
+          @include tablet{
+            margin-right: 0px;
+          }
+        }
+        a {
+          color: $txt-grey;
+          transition: all 0.5s;
+          &:hover {
+            color: $txt-white;
+          }
         }
       }
     }
+    .cta {
+      margin-left: auto;
+      display: flex;
+      gap: 16px;
+      @include tablet {
+        margin-left: inherit;
+        flex-direction: column;
+      }
+    }
+    @include tablet {
+      position: absolute;
+      min-height: 100vh;
+      height: 100%;
+      width:200px;
+      right: -200px;
+      top: 0;
+      padding: 10px;
+      background-color:$cards-bg;
+      flex-direction: column;
+      align-items: flex-start;
+      border-left: 2px solid $green-color;
+      transition: 1s;
+    }
   }
-  .cta {
-    margin-left: auto;
-    display: flex;
-    gap: 16px;
+  .fa-solid {
+    display: none;
+    @include tablet{
+      display: block;
+    }
   }
 }
