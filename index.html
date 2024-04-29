@@ -139,6 +139,19 @@
         </div>
       </div>
     </section>
+    <section class="submitSection">
+      <div class="greenBox">
+        <h3>Submit Better job<br />applications</h3>
+        <h2>10x faster</h2>
+        <p>
+          AI cover letter generator, resume keyword checker, outreach message
+          writer, and more. Powered by GPT
+        </p>
+        <div class="imgBox">
+          <img src="images/image_submit.png" alt="" />
+        </div>
+      </div>
+    </section>
     <script>
       var navLinks = document.getElementById("menuLinks");
       function hideMenu() {
@@ -148,12 +161,10 @@
         navLinks.style.right = "0px";
       }
 
+      var inputElement = document.getElementById("textInput");
 
-
-      var inputElement = document.getElementById('textInput');
-
-    // Add an event listener for the focus event on the input element
-    inputElement.addEventListener('focus', function() {
+      // Add an event listener for the focus event on the input element
+      inputElement.addEventListener("focus", function () {
         // Get the parent div
         var parentDiv = inputElement.parentNode;
 
@@ -161,17 +172,17 @@
         parentDiv.focus();
 
         // Add box-shadow style to the parent div
-        parentDiv.style.border = '1px solid #6de754';
-    });
+        parentDiv.style.border = "1px solid #6de754";
+      });
 
-    // Add an event listener for the blur event on the input element
-    inputElement.addEventListener('blur', function() {
+      // Add an event listener for the blur event on the input element
+      inputElement.addEventListener("blur", function () {
         // Get the parent div
         var parentDiv = inputElement.parentNode;
 
         // Remove box-shadow style from the parent div
-        parentDiv.style.border = '1px solid #909090';
-    });
+        parentDiv.style.border = "1px solid #909090";
+      });
     </script>
   </body>
 </html>

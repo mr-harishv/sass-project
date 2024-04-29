@@ -148,6 +148,73 @@ button {
   margin-top: 3.5%;
 }
 
+.submitSection {
+  padding: 3%;
+  background-color: #161815;
+}
+.submitSection .greenBox {
+  background-color: #6de754;
+  padding: 3.5%;
+  padding-bottom: 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+  text-align: center;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.submitSection .greenBox h3 {
+  font-size: 48px;
+}
+@media screen and (max-width: 991.98px) {
+  .submitSection .greenBox h3 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .submitSection .greenBox h3 {
+    font-size: 24px;
+  }
+}
+.submitSection .greenBox h2 {
+  font-size: 152px;
+}
+@media screen and (max-width: 991.98px) {
+  .submitSection .greenBox h2 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .submitSection .greenBox h2 {
+    font-size: 50px;
+  }
+}
+.submitSection .greenBox p {
+  max-width: 460px;
+}
+.submitSection .greenBox .imgBox {
+  width: 100%;
+  position: relative;
+  line-height: 0;
+  margin-top: 12px;
+}
+.submitSection .greenBox .imgBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(109, 231, 84, 0) 0%, #6de754 100%);
+}
+.submitSection .greenBox .imgBox img {
+  max-width: 100%;
+}
+
 header {
   display: flex;
   align-items: center;

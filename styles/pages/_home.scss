@@ -9,8 +9,8 @@
     align-items: center;
     text-align: center;
     margin-top: 5%;
-    @include mobile{
-      padding:0 6%;
+    @include mobile {
+      padding: 0 6%;
     }
     h1 {
       font-size: $desktop-main-fnt;
@@ -33,5 +33,68 @@
   }
   .features_mgn_gap {
     margin-top: 3.5%;
+  }
+}
+
+.submitSection {
+  padding: 3%;
+  background-color: $main-color;
+  .greenBox {
+    background-color: $green-color;
+    padding: 3.5%;
+    padding-bottom: 0px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: $txt-black;
+    text-align: center;
+    border-radius: $brdr-radius;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      font-size: $desktop-sub-fnt;
+      @include tablet {
+        font-size: $tablet-sub-fnt;
+      }
+      @include mobile {
+        font-size: $mobile-sub-fnt;
+      }
+    }
+    h2 {
+      font-size: 152px;
+      @include tablet {
+        font-size: 100px;
+      }
+      @include mobile {
+        font-size: 50px;
+      }
+    }
+    p {
+      max-width: 460px;
+    }
+    .imgBox {
+      width: 100%;
+      position: relative;
+      line-height: 0;
+      margin-top: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(109, 231, 84, 0) 0%,
+          #6de754 100%
+        );
+      }
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }
