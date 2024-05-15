@@ -17,32 +17,39 @@
   <body>
     <section class="topSection">
       <header>
-        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        <nav id="menuLinks">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <a href="index.html">
+          <img src="images/logo.png" alt="PostJob Logo" />
+        </a>
+        <nav id="menuLinks" aria-label="Main Navigation">
+          <button aria-label="Close Menu" onclick="hideMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
           <ul>
             <li><a href="/">AI Cover Letter Generator</a></li>
             <li><a href="/">Resume Template</a></li>
             <li><a href="/">Pricing</a></li>
           </ul>
           <div class="cta">
-            <button class="primary-btn">Sign In</button>
-            <button class="second-btn">Get Started</button>
+            <button class="primary-btn" aria-label="Sign In">Sign In</button>
+            <button class="second-btn" aria-label="Get Started">Get Started</button>
           </div>
         </nav>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <button aria-label="Open Menu" onclick="showMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </header>
       <div class="text-box">
         <h1>Win your dream job<br /><span>with PostJob</span></h1>
         <p>
-          Submit better job app — 10x faster. AI cover letter generator, resume
-          keyword checker, outreach message writer, and more. Powered by GPT
+          Submit better job applications — 10x faster. AI cover letter generator, resume
+          keyword checker, outreach message writer, and more. Powered by GPT.
         </p>
       </div>
       <div class="searchBox">
         <div class="searchBox_in" id="parentDiv">
-          <input type="text" name="" id="textInput" placeholder="Enter Email" />
-          <button class="second-btn">Get Started</button>
+          <label for="textInput" class="visually-hidden">Enter Email</label>
+          <input type="email" id="textInput" placeholder="Enter Email" />
+          <button class="second-btn" aria-label="Get Started">Get Started</button>
         </div>
       </div>
       <div class="features_mgn_gap firm_features_row">
@@ -53,6 +60,7 @@
             viewBox="0 0 25 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               d="M13.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V9L13.5 2Z"
@@ -83,6 +91,7 @@
             viewBox="0 0 25 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               d="M12.5 14C13.6046 14 14.5 13.1046 14.5 12C14.5 10.8954 13.6046 10 12.5 10C11.3954 10 10.5 10.8954 10.5 12C10.5 13.1046 11.3954 14 12.5 14Z"
@@ -99,7 +108,6 @@
               stroke-linejoin="round"
             />
           </svg>
-
           <h4>Smart Personalization</h4>
           <p>
             Smart Personalization refers to the use of data and technology to
@@ -114,6 +122,7 @@
             viewBox="0 0 25 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               d="M13.5 2H6.5C5.96957 2 5.46086 2.21071 5.08579 2.58579C4.71071 2.96086 4.5 3.46957 4.5 4V20C4.5 20.5304 4.71071 21.0391 5.08579 21.4142C5.46086 21.7893 5.96957 22 6.5 22H18.5C19.0304 22 19.5391 21.7893 19.9142 21.4142C20.2893 21.0391 20.5 20.5304 20.5 20V9L13.5 2Z"
@@ -139,19 +148,20 @@
         </div>
       </div>
     </section>
+    
     <section class="submitSection">
       <div class="greenBox">
         <h3>Submit Better job<br />applications</h3>
         <h2>10x faster</h2>
         <p>
           AI cover letter generator, resume keyword checker, outreach message
-          writer, and more. Powered by GPT
+          writer, and more. Powered by GPT.
         </p>
         <div class="imgBox">
-          <img src="images/image_submit.png" alt="" />
+          <img src="images/image_submit.png" alt="Illustration of AI tools for job applications" />
         </div>
       </div>
-    </section>
+    </section>    
     <section class="workSection">
       <h3>Spend less time<br />looking for work</h3>
       <p>We'll help you through the hardest<br />part of your job search.</p>
