@@ -2,6 +2,7 @@
   min-height: 100vh;
   width: $wFull;
   background-color: $main-color;
+  overflow: hidden;
 
   .text-box {
     display: flex;
@@ -92,6 +93,130 @@
           #6de754 100%
         );
       }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.workSection {
+  background-color: $main-color;
+  padding: 2.5%;
+  color: $txt-white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  h3 {
+    font-size: $desktop-sub-fnt;
+    @include tablet {
+      font-size: $tablet-sub-fnt;
+    }
+    @include mobile {
+      font-size: $mobile-sub-fnt;
+    }
+  }
+  p {
+    color: $txt-grey;
+  }
+  .features_mgn_spacing {
+    flex-wrap: wrap;
+    margin-top: 2%;
+    text-align: left;
+    .cards-col {
+      margin-bottom: 20px;
+      @include mobile {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+// Cover Section
+.coverLetter {
+  background-color: $green-color;
+  color: $txt-black;
+  padding-block: 2%;
+  .coverSection_in {
+    width: 80%;
+    margin: $mgn-auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      padding: 5% 0 0 0;
+      flex-direction: column;
+    }
+    .box_left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      h3 {
+        font-size: $desktop-sub-fnt;
+        @include tablet {
+          font-size: $tablet-sub-fnt;
+        }
+        @include mobile {
+          font-size: $mobile-sub-fnt;
+        }
+      }
+      button {
+        border: 1px solid #161815 !important;
+      }
+    }
+    .box_right {
+      flex: 1;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.resumeSection {
+  background-color: $main-color;
+  color: $txt-white;
+  .template_in {
+    width: 80%;
+    margin: $mgn-auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 5% 0;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      padding: 5% 0 0 0;
+      flex-direction: column;
+    }
+    .left_template {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      h3 {
+        font-size: $desktop-sub-fnt;
+        @include tablet {
+          font-size: $tablet-sub-fnt;
+        }
+        @include mobile {
+          font-size: $mobile-sub-fnt;
+        }
+      }
+    }
+    .right_template {
+      flex: 1;
       img {
         max-width: 100%;
       }

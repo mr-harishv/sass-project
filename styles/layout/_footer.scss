@@ -1,0 +1,130 @@
+footer {
+  background-color: $green-color;
+  color: $txt-black;
+  padding: 3% 0;
+  .footer_in {
+    width: 80%;
+    margin: $mgn-auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    h3 {
+      font-size: $desktop-sub-fnt;
+      @include tablet {
+        font-size: $tablet-sub-fnt;
+      }
+      @include mobile {
+        font-size: $mobile-sub-fnt;
+      }
+    }
+    button {
+      border: 1px solid #161815 !important;
+    }
+  }
+  .ftr_links {
+    width: 84%;
+    margin: $mgn-auto;
+    display: flex;
+    margin-top: 2.5%;
+    justify-content: space-between;
+    @include tablet{
+      flex-wrap: wrap;
+    }
+    .linkBox {
+      flex: 1;
+      @include tablet{
+        flex-basis: 50%;
+        margin-bottom: 32px;
+      }
+      @include mobile{
+        flex-direction: column;
+        flex-basis: 100%;
+      }
+      padding-left: 2%;
+      h5 {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      ul.menuLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-family: "SFProTextRegular";
+        font-size: $font-size-default;
+        li {
+          color: $txt-black;
+          a {
+            color: $txt-black;
+            transition: all 0.5s;
+            &:hover {
+              color: $txt-white;
+              padding-left: 5px;
+            }
+          }
+          ul.socialIcons {
+            display: flex;
+            gap: 24px;
+            width: 100%;
+            li {
+              color: $txt-black;
+              a {
+                color: $txt-black;
+                transition: all 0.5s;
+                &:hover {
+                  color: $txt-white;
+                  padding-left: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cpyright {
+    width: 84%;
+    margin: $mgn-auto;
+    margin-top: 2.5%;
+    border-top: 1px solid $txt-black;
+    padding-top: 2.5%;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "SFProTextRegular";
+      flex-wrap: wrap;
+      font-size: 0px;
+      @include mobile{
+        justify-content: flex-start;
+      }
+      li {
+        color: $txt-black;
+        position: relative;
+        font-size: $font-size-default;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include mobile{
+          &:nth-child(-n + 3){
+            padding-left: 0px;
+            padding-right: 10px;
+          }
+        }
+        &:nth-child(-n + 3)::after {
+          position: absolute;
+          content: "|";
+          right: -2px;
+          top: 0;
+        }
+        a {
+          color: $txt-black;
+          transition: all 0.5s;
+          &:hover {
+            color: $txt-white;
+          }
+        }
+      }
+    }
+  }
+}
